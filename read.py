@@ -5,7 +5,7 @@ stored in a list with index being id.
 i.e. M001 will be store in index 1
 '''
 def readData(): 
-    read_file = open("cairo.data")
+    read_file = open("../datasets/cairo.data")
 
     next = read_file.readline()
     # print the line num in debug mode
