@@ -1,0 +1,7 @@
+log
+model:
+Dense(32, input_shape=(shape,)),
+    Activation('relu'),
+    Dense(10),
+    Activation('softmax'),
+
