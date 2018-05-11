@@ -21,3 +21,16 @@ def normalization(input_array):
 						array[row][col] /= float(col_max)
 						#print(array[row][col])
 	return array
+
+def square(input_array):
+	array = input_array.astype(float)
+
+	if array.size != 0:
+		row_size = array[0].size
+		row_count = int(array.size/array[0].size)
+	
+	for col in range(row_size):
+		for row in range(row_count):
+			array[row][col] *= array[row][col]
+
+	return array
