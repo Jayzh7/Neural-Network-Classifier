@@ -1,4 +1,4 @@
-def generateConfusionMatrix(predict, label):
+def generateCM(predict, label):
 	row_cnt = predict.shape[0]
 	col_cnt = predict.shape[1]
 	
