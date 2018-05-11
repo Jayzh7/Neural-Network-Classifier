@@ -1,3 +1,9 @@
+'''
+read from Tulum2009 dataset and split data and label if specified
+
+return: split data and label or complete data and label
+'''
+
 import numpy as np
 import keras
 from random import shuffle
@@ -7,7 +13,7 @@ stored in a list with index being id.
 i.e. M001 will be store in index 1
 '''
 def readData(split=0): 
-    read_file = open("data.txt")
+    read_file = open("datasets/data.txt")
 
     next = read_file.readline()
     # print the line num in debug mode

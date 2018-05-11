@@ -1,3 +1,8 @@
+'''
+read from cairo dataset and return all data and labels
+'''
+
+
 import numpy as np
 '''
 27 Sensors are used in total. Their data will be 

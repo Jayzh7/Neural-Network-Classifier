@@ -1,3 +1,7 @@
+'''
+read from Tulum2009 dataset and return 3-splited data and labels for 3-fold cross validation
+'''
+
 import numpy as np
 import keras
 from random import shuffle
@@ -7,7 +11,7 @@ stored in a list with index being id.
 i.e. M001 will be store in index 1
 '''
 def readData(split=[0.33, 0.66]): 
-    read_file = open("data.txt")
+    read_file = open("datasets/data.txt")
 
     next = read_file.readline()
     # print the line num in debug mode

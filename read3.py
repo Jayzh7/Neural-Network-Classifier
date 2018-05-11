@@ -1,3 +1,7 @@
+'''
+read from cairo dataset and return data and label as specified
+'''
+
 import numpy as np
 import keras
 from random import shuffle
@@ -7,7 +11,7 @@ stored in a list with index being id.
 i.e. M001 will be store in index 1
 '''
 def readData(split=0.33): 
-    read_file = open("cairo.data")
+    read_file = open("datasets/cairo.data")
 
     next = read_file.readline()
     # print the line num in debug mode
